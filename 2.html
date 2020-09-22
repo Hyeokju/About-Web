@@ -1,41 +1,41 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>WEB1 - CSS</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <link rel = "stylesheet" href="style.css"/>
-    </head>
+    </head>    
     <body>
-        <h1><a href="index.html" style="color: lightskyblue;">WEB</a></h1>
+        <h1><!--<img src="Orwi.jpg">--><a class="style_color" href="index.html" style="color: black; width: 250px; height: 50px; text-decoration-line: none;"><!--Orwi-->혁주의 사이트</a></h1>
+        <input class = "r" type="button" value="night" onclick="
+            var target = document.querySelector('body');
+            if(this.value === 'night')
+            {
+                /*document.querySelector('body')*/target.style.backgroundColor = 'black';
+                /*document.querySelector('body')*/target.style.color = 'white';
+                document.querySelector('.style_color').style.color = 'white';
+                document.querySelector('.olol').style.color = 'white';
+                document.querySelector('.r').value = 'day';
+            }
+            else
+            {
+                /*document.querySelector('body')*/target.style.backgroundColor = 'white';
+                /*document.querySelector('body')*/target.style.color = 'black';
+                document.querySelector('.style_color').style.color = 'black';
+                document.querySelector('.olol').style.color = 'black';
+                document.querySelector('.r').value = 'night';
+            }
+            ">
         <div id="grid">
             <ol>
-                <li><a href="1.html">HTML</a></li>
-                <li><a href="2.html" style="color: goldenrod;">CSS</a></li>
-                <li><a href="3.html">JavaScript</a></li>
+                <li><a href="index.html" class = "olol">혁주에 대해서</a></li>
+                <li><a href="2.html" class = "olol">관심사</a></li>
+                <li><a href="3.html" class = "olol">주로 하는 게임</a></li>
+                <li><a href="4.html" class = "olol">좋아하는 음악</a></li>
+                <li><a href="5.html" class = "olol">그 외</a></li>
             </ol>
-
-            <!--
-            <h1><a href="index.html"><font color="red">WEB</font></a></h1>
-            <ol>
-                <li><a href="1.html"><font color="red">HTML</font></a></li>
-                <li><a href="2.html"><font color="red">CSS</font></a></li>
-                <li><a href="3.html"><font color="red">JavaScript</font></a></li>
-            </ol>
-            -->
-
             <div id="article">
-                <h2>CSS란 무엇인가?</h2>
-                <p>
-                    Cascading Style Sheets (CSS) is a style sheet language used for describing the
-                    presentation of a document written in a markup language like HTML. CSS is a 
-                    cornerstone technology of the World Wide Web, alongside HTML and JavaScript. 
-                    CSS is designed to enable the separation of presentation and content, including 
-                    layout, colors, and fonts. This separation can improve content accessibility, 
-                    provide more flexibility and control in the specification of presentation 
-                    characteristics, enable multiple web pages to share formatting by specifying the 
-                    relevant CSS in a separate .css file, and reduce complexity and repetition in the 
-                    structural content.
-                </p>
+                <h2 style="font-size: 30px;">관심사</h2>
+                <a class="p">컴퓨터 관련이면 다 좋아함, 게임(FPS 선호), 수학, 과학</a>
             </div>
         </div>
     </body>

@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>WEB1 - Web</title>
         <meta charset="UTF-8">
         <link rel = "stylesheet" href="style.css"/>
-    </head>  
+    </head>    
     <body>
-        <h1><a href="index.html" style="color: lightskyblue;">WEB</a></h1>
+        <h1><!--<img src="Orwi.jpg">--><a class="style_color" href="index.html" style="color: black; width: 250px; height: 50px; text-decoration-line: none;"><!--Orwi-->혁주의 사이트</a></h1>
         <input class = "r" type="button" value="night" onclick="
             var target = document.querySelector('body');
             if(this.value === 'night')
             {
                 /*document.querySelector('body')*/target.style.backgroundColor = 'black';
                 /*document.querySelector('body')*/target.style.color = 'white';
+                document.querySelector('.style_color').style.color = 'white';
+                document.querySelector('.olol').style.color = 'white';
                 document.querySelector('.r').value = 'day';
             }
             else
             {
                 /*document.querySelector('body')*/target.style.backgroundColor = 'white';
                 /*document.querySelector('body')*/target.style.color = 'black';
+                document.querySelector('.style_color').style.color = 'black';
+                document.querySelector('.olol').style.color = 'black';
                 document.querySelector('.r').value = 'night';
             }
             ">
         <div id="grid">
             <ol>
-                <li><a href="1.html" class="r">HTML</a></li>
-                <li><a href="2.html" style="color: goldenrod;">CSS</a></li>
-                <li><a href="3.html" class="r">JavaScript</a></li>
+                <li><a href="index.html" class = "olol">혁주에 대해서</a></li>
+                <li><a href="2.html" class = "olol">관심사</a></li>
+                <li><a href="3.html" class = "olol">주로 하는 게임</a></li>
+                <li><a href="4.html" class = "olol">좋아하는 음악</a></li>
+                <li><a href="5.html" class = "olol">그 외</a></li>
             </ol>
-            <!--
-                <h1><a href="index.html"><font color="red">WEB</font></a></h1>
-                <ol>
-                    <li><a href="1.html"><font color="red">HTML</font></a></li>
-                    <li><a href="2.html"><font color="red">CSS</font></a></li>
-                    <li><a href="3.html"><font color="red">JavaScript</font></a></li>
-                </ol>
-            -->
             <div id="article">
-                <h2 style="font-size: 30px;">WEB이란 무엇인가?</h2>
-                <p>
-                The World Wide Web (abbreviated WWW or the Web) is an information space where documents and 
-                other web resources are identified by Uniform Resource Locators (URLs), interlinked by 
-                hypertext links, and accessible via the Internet.[1] English scientist Tim Berners-Lee invented 
-                the World Wide Web in 1989. He wrote the first web browser in 1990 while employed at CERN in 
-                Switzerland.[2][3] The browser was released outside CERN in 1991, first to other research 
-                institutions starting in January 1991 and to the general public on the Internet in August 1991.
-                </p>
+                <h2 style="font-size: 30px;">혁주에 대해서</h2>
+                <a class="p"><!--<img src="Orwi.jpg" width="80px">-->나이 : 14살 (중1)<br>성별 : 남자<br>소개말 : 안녕하세요</a>
             </div>
         </div>
-        <input class = "r" type="button" value="night" onclick="
-            var target = document.querySelector('body');
-            if(this.value === 'night')
-            {
-                /*document.querySelector('body')*/target.style.backgroundColor = 'black';
-                /*document.querySelector('body')*/target.style.color = 'white';
-                document.querySelector('.r').value = 'day';
-            }
-            else
-            {
-                /*document.querySelector('body')*/target.style.backgroundColor = 'white';
-                /*document.querySelector('body')*/target.style.color = 'black';
-                document.querySelector('.r').value = 'night';
-            }
-            ">
     </body>
 </html>
